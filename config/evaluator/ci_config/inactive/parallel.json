@@ -1,0 +1,67 @@
+{
+  "evaluation_name": "ci_parallel",
+  "options": ["options_basic"],
+  "scenarios": [
+    "sc01",
+    "sc02",
+    "sc03",
+    "sc04",
+    "sc05",
+    "sc06",
+    "sc07",
+    "sc08",
+    "sc09",
+    "sc10",
+    "sc11",
+    "sc12",
+    "sc13",
+    "sc14",
+    "sc15"
+  ],
+  "number_runs": 1,
+  "options_alterations": {
+    "compute_options": {
+      "n_iterations": [500],
+      "n_threads": [1],
+      "n_simulationThreads": [4],
+      "policy_options": {
+        "simulation_Policy": ["parallelMaxValue"]
+      },
+      "random_seed": [
+        331,
+        650,
+        28,
+        134,
+        198,
+        882,
+        167,
+        572,
+        230,
+        163,
+        483,
+        185,
+        8,
+        968,
+        306,
+        653,
+        493,
+        684,
+        272,
+        470,
+        359,
+        460,
+        857,
+        933,
+        101
+      ]
+    },
+    "output_options": {
+      "export_format": ["none"]
+    }
+  },
+  "scenario_alterations": {},
+  "ray_cluster": {
+    "address": null,
+    "max_workers": 0
+  }
+}

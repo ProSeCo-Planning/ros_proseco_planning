@@ -1,0 +1,227 @@
+{
+    "name": "SC06",
+    "road": {
+        "random": false,
+        "number_lanes": 3,
+        "lane_width": 3.5,
+        "sigma_lane_width": 0.25
+    },
+    "agents": [
+        {
+            "id": 0,
+            "is_predefined": false,
+            "cooperation_factor": 0.5,
+            "action_space": {
+                "type": "rectangle",
+                "max_velocity_change": 5.0,
+                "max_lateral_change": 5.0,
+                "delta_velocity": 1.66666666666666666666667
+            },
+            "cost_model": {
+                "name": "costExponential",
+                "w_acceleration_x": 0.0,
+                "w_acceleration_y": -5.0,
+                "cost_collision": -1000.0,
+                "cost_invalid_action": 0.0,
+                "cost_invalid_state": -1000.0,
+                "w_lane_center_deviation": 85.0,
+                "w_lane_change": -10.0,
+                "w_lane_deviation": 100.0,
+                "w_velocity_deviation": 500.0,
+                "cost_enter_safe_range": -10.0,
+                "reward_terminal": 0.0
+            },
+            "desire": {
+                "velocity": 10.0,
+                "lane": 1,
+                "lane_center_tolerance": 1.0,
+                "velocity_tolerance": 2.0
+            },
+            "terminal_condition": {
+                "position_x": 150.0,
+                "position_y": 7.0,
+                "comparator_position_x": "larger",
+                "comparator_position_y": "none"
+            },
+            "vehicle": {
+                "position_x": 32.0,
+                "position_y": 1.75,
+                "velocity_x": 10.0,
+                "velocity_y": 0.0,
+                "width": 1.827,
+                "length": 4.709,
+                "heading": 0.0,
+                "random": true,
+                "sigma_position_x": 4.0,
+                "sigma_position_y": 0.2,
+                "sigma_heading": 0.0,
+                "sigma_width": 0.0,
+                "sigma_length": 0.0,
+                "sigma_velocity_x": 0.0,
+                "sigma_velocity_y": 0.0,
+                "wheel_base": 2.851,
+                "max_steering_angle": 0.263,
+                "max_speed": 36.0,
+                "max_acceleration": 9.807
+            }
+        },
+        {
+            "id": 1,
+            "is_predefined": false,
+            "cooperation_factor": 0.5,
+            "action_space": {
+                "type": "rectangle",
+                "max_velocity_change": 5.0,
+                "max_lateral_change": 5.0,
+                "delta_velocity": 1.66666666666666666666667
+            },
+            "cost_model": {
+                "name": "costExponential",
+                "w_acceleration_x": 0.0,
+                "w_acceleration_y": -5.0,
+                "cost_collision": -1000.0,
+                "cost_invalid_action": 0.0,
+                "cost_invalid_state": -1000.0,
+                "w_lane_center_deviation": 85.0,
+                "w_lane_change": -10.0,
+                "w_lane_deviation": 100.0,
+                "w_velocity_deviation": 500.0,
+                "cost_enter_safe_range": -10.0,
+                "reward_terminal": 0.0
+            },
+            "desire": {
+                "velocity": 10.0,
+                "lane": 1,
+                "lane_center_tolerance": 1.0,
+                "velocity_tolerance": 2.0
+            },
+            "terminal_condition": {
+                "position_x": 150.0,
+                "position_y": 7.0,
+                "comparator_position_x": "larger",
+                "comparator_position_y": "none"
+            },
+            "vehicle": {
+                "position_x": 30.0,
+                "position_y": 8.75,
+                "velocity_x": 10.0,
+                "velocity_y": 0.0,
+                "width": 1.827,
+                "length": 4.709,
+                "heading": 0.0,
+                "random": true,
+                "sigma_position_x": 4.0,
+                "sigma_position_y": 0.2,
+                "sigma_heading": 0.0,
+                "sigma_width": 0.0,
+                "sigma_length": 0.0,
+                "sigma_velocity_x": 0.0,
+                "sigma_velocity_y": 0.0,
+                "wheel_base": 2.851,
+                "max_steering_angle": 0.263,
+                "max_speed": 36.0,
+                "max_acceleration": 9.807
+            }
+        }
+    ],
+    "obstacles": [
+        {
+            "id": 0,
+            "position_x": 60.0,
+            "position_y": 1.75,
+            "width": 3.0,
+            "length": 10.0,
+            "heading": 0.0,
+            "random": false,
+            "sigma_position_x": 0.0,
+            "sigma_position_y": 0.0,
+            "sigma_heading": 0.0,
+            "sigma_width": 0.0,
+            "sigma_length": 0.0
+        },
+        {
+            "id": 1,
+            "position_x": 75.0,
+            "position_y": 1.75,
+            "width": 3.0,
+            "length": 10.0,
+            "heading": 0.0,
+            "random": false,
+            "sigma_position_x": 0.0,
+            "sigma_position_y": 0.0,
+            "sigma_heading": 0.0,
+            "sigma_width": 0.0,
+            "sigma_length": 0.0
+        },
+        {
+            "id": 2,
+            "position_x": 90.0,
+            "position_y": 1.75,
+            "width": 3.0,
+            "length": 10.0,
+            "heading": 0.0,
+            "random": false,
+            "sigma_position_x": 0.0,
+            "sigma_position_y": 0.0,
+            "sigma_heading": 0.0,
+            "sigma_width": 0.0,
+            "sigma_length": 0.0
+        },
+        {
+            "id": 3,
+            "position_x": 105.0,
+            "position_y": 1.75,
+            "width": 3.0,
+            "length": 10.0,
+            "heading": 0.0,
+            "random": false,
+            "sigma_position_x": 0.0,
+            "sigma_position_y": 0.0,
+            "sigma_heading": 0.0,
+            "sigma_width": 0.0,
+            "sigma_length": 0.0
+        },
+        {
+            "id": 4,
+            "position_x": 120.0,
+            "position_y": 1.75,
+            "width": 3.0,
+            "length": 10.0,
+            "heading": 0.0,
+            "random": false,
+            "sigma_position_x": 0.0,
+            "sigma_position_y": 0.0,
+            "sigma_heading": 0.0,
+            "sigma_width": 0.0,
+            "sigma_length": 0.0
+        },
+        {
+            "id": 5,
+            "position_x": 135.0,
+            "position_y": 1.75,
+            "width": 3.0,
+            "length": 10.0,
+            "heading": 0.0,
+            "random": false,
+            "sigma_position_x": 0.0,
+            "sigma_position_y": 0.0,
+            "sigma_heading": 0.0,
+            "sigma_width": 0.0,
+            "sigma_length": 0.0
+        },
+        {
+            "id": 6,
+            "position_x": 150.0,
+            "position_y": 1.75,
+            "width": 3.0,
+            "length": 10.0,
+            "heading": 0.0,
+            "random": false,
+            "sigma_position_x": 0.0,
+            "sigma_position_y": 0.0,
+            "sigma_heading": 0.0,
+            "sigma_width": 0.0,
+            "sigma_length": 0.0
+        }
+    ]
+}

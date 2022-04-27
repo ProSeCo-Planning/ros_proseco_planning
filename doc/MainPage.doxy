@@ -1,0 +1,7 @@
+/// \mainpage ROS ProSeCo Planning
+///
+/// \section intro_sec Introduction
+/// ProSeCo Planning is a probabilistic semantic and cooperative planning framework for automated vehicles in heterogeneous scenarios.
+///
+///
+/// \image html maneuver_bottleneck.png

@@ -1,0 +1,23 @@
+*/html
+*/latex
+# exclude the platform definitions
+config.h
+*.autosave
+# exclude the generated output files
+*.dot
+*.pyc
+# excluse python egg files and directories
+.eggs/
+*.egg-info/
+*.egg
+/python/build/
+/python/dist/
+*wandb/
+
+# Python docs
+/doc/build/*
+/doc/source/*.rst
+!/doc/source/index.rst
+!/doc/source/readme.rst
+
+# Evaluator results

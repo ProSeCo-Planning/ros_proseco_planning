@@ -1,0 +1,25 @@
+[tool.black]
+line-length = 88
+target-version = ['py36', 'py37', 'py38']
+exclude = '''
+
+(
+  /(
+    | \.git
+    | doc
+    | config
+    | include
+    | launch
+    | logs
+    | src
+  )/
+  | .clang-format
+  | .git
+  | .gitignore
+  | .gitlab-ci.yml
+  | CMakeLists.txt
+  | config.h.in
+  | package.xml
+  | README.md
+)
+'''

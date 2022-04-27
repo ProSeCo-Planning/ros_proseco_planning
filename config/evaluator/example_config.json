@@ -1,0 +1,33 @@
+{
+  "evaluation_name": "example_evaluation",
+  "options": ["example_options"],
+  "scenarios": [
+    "sc01",
+    "sc02",
+    "sc03",
+    "sc04",
+    "sc05",
+    "sc06",
+    "sc07",
+    "sc08",
+    "sc09",
+    "sc10"
+  ],
+  "number_runs": 1,
+  "options_alterations": {
+    "compute_options": {
+      "n_iterations": [125, 250, 500],
+      "discount_factor": [0.7, 0.8, 0.9],
+      "parallelization_options": {
+        "n_simulationThreads": [1, 2, 4],
+        "simulation_aggregation": ["max", "mean"]
+      },
+      "random_seed": [331, 650, 28]
+    }
+  },
+  "scenario_alterations": {},
+  "ray_cluster": {
+    "address": null,
+    "max_workers": 0
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "compute_options": {
+    "max_search_depth": [1, 5],
+    "discount_factor": [0.6, 0.99],
+
+    "policy_options": {
+      "simulation_Policy": ["random", "moderate"],
+      "final_selection_policy": [
+        "maxActionValue",
+        "maxVisitCount",
+        "mostTrusted"
+      ],
+      "policy_enhancements": {
+        "progressive_widening": {
+          "coefficient": [0.5, 5.0],
+          "exponent": [0.1, 0.9],
+          "max_depth_pw": [2, 5]
+        }
+      }
+    },
+    "uct_cp": [0.5, 5.0]
+  }
+}

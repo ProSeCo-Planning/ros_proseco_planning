@@ -1,0 +1,32 @@
+{
+  "evaluation_name": "example_hpopt_evaluation",
+  "options": ["example_options"],
+  "scenarios": [
+    "sc01",
+    "sc02",
+    "sc03",
+    "sc04",
+    "sc05",
+    "sc06",
+    "sc07",
+    "sc08",
+    "sc09",
+    "sc10"
+  ],
+  "number_runs": 1,
+  "options_alterations": {
+    "compute_options": {
+      "n_iterations": [500],
+      "random_seed": [331, 650, 28]
+    },
+    "output_options": {
+      "export_format": ["msgpack"],
+      "export": [["result"]]
+    }
+  },
+  "scenario_alterations": {},
+  "ray_cluster": {
+    "address": null,
+    "max_workers": 0
+  }
+}

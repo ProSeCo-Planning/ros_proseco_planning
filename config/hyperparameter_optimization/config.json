@@ -1,0 +1,30 @@
+{
+  "name": "basic_mcts",
+  "analyzer": {
+    "evaluation_name": "",
+    "options_plot": true,
+    "tuple_plot": true
+  },
+  "optimizer": {
+    "base_config": "example_hpot_config.json",
+    "baseline_incumbent_plot": true,
+    "efficient_frontier_plot": true,
+    "best_function_value": 685.0,
+    "hyperparameter_space": "example_hp_space.json",
+    "multicriterial_weights": [1.0],
+    "number_iterations": 50,
+    "optimization_function": ["carsCollided", "carsInvalid"],
+    "seed": null,
+    "type": "smac_4HPO",
+    "validate_baseline_incumbent": {
+      "active": false,
+      "iterations_multiplier": 10
+    }
+  },
+  "optimizer_comparison": {
+    "algorithms": ["smac_4HPO", "random"],
+    "comparison_plot": true,
+    "iterations_budget": 2,
+    "repetitions": 1
+  }
+}

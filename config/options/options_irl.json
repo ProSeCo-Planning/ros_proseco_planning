@@ -1,0 +1,82 @@
+{
+  "compute_options": {
+      "action_duration": 2.0,
+      "action_noise": {
+          "active": false,
+          "mean_vx": 0.0,
+          "mean_y": 0.0,
+          "sigma_vx": 1.0,
+          "sigma_y": 1.0
+      },
+      "collision_checker": "circleApproximation",
+      "delta_t": 0.1,
+      "discount_factor": 0.6234572529792786,
+      "end_condition": "infinite",
+      "max_scenario_duration": 60.0,
+      "max_scenario_steps": 13,
+      "max_search_depth": 2,
+      "max_step_duration": 0.0,
+      "n_iterations": 500,
+      "noise": {
+          "active": false,
+          "mean": 0.0,
+          "sigma": 0.15
+      },
+      "parallelization_options": {
+          "n_simulationThreads": 1,
+          "n_threads": 1,
+          "similarity_gamma": 1.0,
+          "similarity_voting": false,
+          "simulation_aggregation": "max"
+      },
+      "policy_options": {
+          "expansion_policy": "UCT",
+          "final_selection_policy": "sampleExpQ",
+          "policy_enhancements": {
+              "action_execution_fraction": 0.4,
+              "move_grouping": {
+                  "active": true,
+                  "cp": 3.464101552963257,
+                  "final_decision": true,
+                  "move_grouping_bias_pw": true,
+                  "move_grouping_criteria_pw": {
+                      "active": true,
+                      "coefficient_pw": 0.55,
+                      "exponent_pw": 0.4
+                  }
+              },
+              "progressive_widening": {
+                  "coefficient": 0.8007492423057556,
+                  "exponent": 0.5129899382591248,
+                  "max_depth_pw": 4
+              },
+              "q_scale": 100.0,
+              "search_guide": {
+                  "n_samples": 51,
+                  "type": "blindValue"
+              },
+              "similarity_update": {
+                  "active": false,
+                  "gamma": 1.0
+              }
+          },
+          "selection_policy": "UCTProgressiveWidening",
+          "simulation_Policy": "moderate",
+          "update_policy": "UCT"
+      },
+      "random_seed": 0,
+      "region_of_interest": 0.0,
+      "safety_distance": 0.0,
+      "trajectory_type": "jerkOptimal",
+      "uct_cp": 0.6313707828521729
+  },
+  "output_options": {
+      "export": [
+          "result",
+          "trajectory",
+          "irlTrajectory"
+      ],
+      "export_format": "json",
+      "output_path": ""
+  }
+}

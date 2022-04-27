@@ -1,0 +1,27 @@
+{
+  "create_experts": false,
+  "experts_path":"/tmp/co1539/irl/experts/50_sc01_sc06",
+  "training_name": "SC01_SC06_use",
+  "scenarios": [
+    "sc01",
+    "sc02",
+    "sc03",
+    "sc04",
+    "sc05",
+    "sc06"
+  ],
+  "only_matching_scenarios": true,
+  "number_of_q_samples": 75,
+  "number_of_steps": 300,
+  "linear_reward": true,
+  "cooperative_reward": false,
+  "learning_rate": 0.0005,
+  "q_scale": 100,
+  "options_irl": "options_irl",
+  "options_experts": "options_irl_experts_2",
+  "override_expert_cost_params": [1.0, 1.3, 1.9, -1.0, -1.0, -2.5, 0.3],
+  "compare_with_experts": true,
+  "scenario_name": "sc01",
+  "number_of_samples": 10,
+  "episode_length": 13
+}

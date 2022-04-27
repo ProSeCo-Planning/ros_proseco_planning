@@ -1,0 +1,85 @@
+{
+  "output_options": {
+    "export_format": "msgpack",
+    "export": [
+      "result",
+      "childMap",
+      "permutationMap",
+      "moveGroups",
+      "trajectory",
+      "singleShot"
+    ],
+    "output_path": ""
+  },
+  "compute_options": {
+    "region_of_interest": 0.0,
+    "action_duration": 2.0,
+    "collision_checker": "circleApproximation",
+    "delta_t": 0.1,
+    "discount_factor": 0.7,
+    "end_condition": "scenario",
+    "max_search_depth": 5,
+    "max_scenario_duration": 50.0,
+    "max_scenario_steps": 0,
+    "max_step_duration": 20.0,
+    "n_iterations": 500,
+    "noise": {
+      "active": false,
+      "mean": 0.0,
+      "sigma": 0.15
+    },
+    "action_noise": {
+      "active": false,
+      "mean_y": 0.0,
+      "sigma_y": 1.0,
+      "mean_vx": 0.0,
+      "sigma_vx": 1.0
+    },
+    "policy_options": {
+      "expansion_policy": "UCT",
+      "final_selection_policy": "maxActionValue",
+      "policy_enhancements": {
+        "move_grouping": {
+          "active": true,
+          "cp": 3.46410161514,
+          "final_decision": true,
+          "move_grouping_bias_pw": true,
+          "move_grouping_criteria_pw": {
+            "active": true,
+            "coefficient_pw": 0.55,
+            "exponent_pw": 0.4
+          }
+        },
+        "progressive_widening": {
+          "coefficient": 0.5,
+          "exponent": 0.55,
+          "max_depth_pw": 2
+        },
+        "search_guide": {
+          "n_samples": 100,
+          "type": "blindValue"
+        },
+        "similarity_update": {
+          "active": true,
+          "gamma": 1.0
+        },
+        "action_execution_fraction": 0.4,
+        "q_scale": 100.0
+      },
+      "selection_policy": "UCTProgressiveWidening",
+      "simulation_Policy": "moderate",
+      "update_policy": "UCT"
+    },
+    "parallelization_options": {
+      "n_simulationThreads": 1,
+      "n_threads": 1,
+      "similarity_voting": true,
+      "similarity_gamma": 1.0,
+      "simulation_aggregation": "max"
+    },
+    "random_seed": 0,
+    "safety_distance": 0.0,
+    "trajectory_type": "jerkOptimal",
+    "uct_cp": 4.0
+  }
+}

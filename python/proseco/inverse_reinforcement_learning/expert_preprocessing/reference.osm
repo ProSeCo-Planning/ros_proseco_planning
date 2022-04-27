@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<osm version='0.6' generator='JOSM'>
+  <node id='1000' visible='true' version='1' lat='0.00860598684' lon='0.00917192296' />
+  <node id='1001' visible='true' version='1' lat='0.00863912852' lon='0.00902404929' />
+  <node id='1002' visible='true' version='1' lat='0.00866281977' lon='0.00894550787' />
+  <node id='1083' visible='true' version='1' lat='0.00856060087' lon='0.00954222658' />
+  <node id='1086' visible='true' version='1' lat='0.00859175219' lon='0.01004344576' />
+  <node id='1095' visible='true' version='1' lat='0.00859449463' lon='0.00923984473' />
+  <node id='1096' visible='true' version='1' lat='0.00855894855' lon='0.00969517172' />
+  <node id='1127' visible='true' version='1' lat='0.00863678976' lon='0.01028794391' />
+  <node id='1128' visible='true' version='1' lat='0.00860691952' lon='0.01013826359' />
+  <node id='1129' visible='true' version='1' lat='0.00857867807' lon='0.00995526529' />
+  <node id='1130' visible='true' version='1' lat='0.00856204894' lon='0.00977471641' />
+  <node id='1131' visible='true' version='1' lat='0.00855993037' lon='0.0096291487' />
+  <node id='1132' visible='true' version='1' lat='0.00856328524' lon='0.00948416661' />
+  <node id='1133' visible='true' version='1' lat='0.00857435924' lon='0.0093620057' />
+  <way id='10008' visible='true' version='1'>
+    <nd ref='1129' />
+    <nd ref='1086' />
+    <tag k='type' v='guard_rail' />
+  </way>
+  <way id='10012' visible='true' version='1'>
+    <nd ref='1086' />
+    <nd ref='1128' />
+    <nd ref='1127' />
+    <tag k='type' v='guard_rail' />
+  </way>
+  <way id='10018' visible='true' version='1'>
+    <nd ref='1083' />
+    <nd ref='1131' />
+    <nd ref='1096' />
+    <tag k='type' v='guard_rail' />
+  </way>
+
+  <way id='10042' visible='true' version='1'>
+    <nd ref='1130' />
+    <nd ref='1129' />
+    <tag k='type' v='guard_rail' />
+  </way>
+
+  <way id='10046' visible='true' version='1'>
+    <nd ref='1000' />
+    <nd ref='1095' />
+    <tag k='type' v='guard_rail' />
+  </way>
+  <way id='10047' visible='true' version='1'>
+    <nd ref='1095' />
+    <nd ref='1133' />
+    <nd ref='1132' />
+    <nd ref='1083' />
+    <tag k='type' v='guard_rail' />
+  </way>
+  <way id='10048' visible='true' version='1'>
+    <nd ref='1096' />
+    <nd ref='1130' />
+    <tag k='type' v='guard_rail' />
+  </way>
+  
+  <way id='10062' visible='true' version='1'>
+    <nd ref='1002' />
+    <nd ref='1001' />
+    <nd ref='1000' />
+    <tag k='type' v='guard_rail' />
+  </way>
+
+</osm>
