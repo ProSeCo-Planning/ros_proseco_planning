@@ -73,7 +73,7 @@ cd python/proseco && python hyperparameter_optimization/optimize.py -f optimizer
 
 ## Configuration Instructions
 
-The behavior of the algorithm can be completely configured by changing the CUE/JSON based configuration files.
+The behavior of the algorithm can be configured entirely by changing the CUE/JSON based configuration files.
 
 ### Options
 
@@ -81,7 +81,7 @@ The options determine the algorithm's configuration.
 
 ### Scenarios
 
-The scenarios describe different scenarios the algorithm can be evaluated on.
+The scenarios describe different traffic scenarios with which the algorithm can be evaluated.
 
 ### Evaluator
 
