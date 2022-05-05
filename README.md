@@ -16,6 +16,7 @@
   - [Formatting](#formatting)
   - [Documentation](#documentation)
   - [Profiling](#profiling)
+  - [Citation](#citation)
 
 ## ProSeCo Planning C++ library
 
@@ -124,3 +125,6 @@ The resulting binary can be profiled using:
 
 1. `valgrind --tool=callgrind --callgrind-out-file=callgrind.out --instr-atstart=no ./proseco_planning_node ros_proseco_planning_node example_options.json sc01.json`
 2. `kcachegrind callgrind.out`
+
+## Citation 
+Please refer to the respective [publication](https://github.com/ProSeCo-Planning#citation) if you are using it for your work. Thank you very much 🙂!
