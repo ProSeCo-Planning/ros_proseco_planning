@@ -111,6 +111,8 @@ All `.cue` files must be formatted using [cue](https://cuelang.org/), e.g. `cue 
 
 ### C++ Documentation
 
+The documentation for the ROS package can be found [here](https://proseco-planning.github.io/ros_proseco_planning/).
+
 The documentation can be generated using doxygen.
 `cd doc && doxygen Doxyfile`
 
