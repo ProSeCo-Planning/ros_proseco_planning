@@ -1,4 +1,4 @@
-# ROS Interface for ProSeCo Planning - Probabilistic Semantic Cooperative Planning
+# ROS Interface for [ProSeCo Planning](https://github.com/ProSeCo-Planning/proseco_planning) - Probabilistic Semantic Cooperative Planning
 
 ## Table of Contents
 
@@ -23,6 +23,7 @@
 The ProSeCo Planning C++ library can be found [here](https://github.com/ProSeCo-Planning/proseco_planning).
 
 ## Overview
+An introduction to the project can be found [here](https://github.com/ProSeCo-Planning)
 
     ├── README.md                                # This file
     ├── CMakeLists.txt                           # Project level CMake file
